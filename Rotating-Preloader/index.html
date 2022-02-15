@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css | Rotating Animated Preloader</title>
+    <style>
+        body{
+            background-color: #333;
+            background-image: url(bg.png);
+        }
+        .ext{
+            border: 2px solid #111;
+            width: 304px;
+            height: 304px;
+            margin: 100px auto;
+            border-radius: 100%;
+        }
+        .big{
+            border: 2px solid cyan;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            animation: rot 4s linear infinite;
+        }
+        .int{
+            border: 5px solid #191919;
+            width: 290px;
+            height: 290px;
+            border-radius: 100%;
+
+        }
+        .small{ 
+           width: 30px;
+           height: 30px;
+           background-color: cyan;
+           border-radius: 100%;
+           margin: -25px auto;
+           border: 5px solid #191919;
+
+        }
+        @keyframes rot {
+            from{
+                transform:rotate(0deg);
+            }
+            to{
+                transform:rotate(360deg);;
+            }
+            
+        }
+        .cerc-interior{
+            width: 135px;
+            height: 135px;
+            margin:80px auto;
+            border-radius: 100%;
+            border: 2px solid yellowgreen;
+            animation: rot 2s linear infinite;
+            animation-direction: reverse;
+
+        }
+        .bila-interior{
+            width: 20px;
+            height: 20px;
+            margin-left: 55px;
+            margin-top:-11px;
+            border: 2px solid black;
+            background-color: yellowgreen;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="ext">
+        <div class="big">
+            <div class="int">
+                <div class="small"></div>
+                <div class="cerc-interior">
+                    <div class="bila-interior"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
